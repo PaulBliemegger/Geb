@@ -13,7 +13,11 @@ extern Geb::Application* Geb::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	
+	Geb::Log::Init();
+	GB_CORE_WARN("Initialized Log!");
+	int a = 5;
+	GB_INFO("Hello! Var={0}", a);
+
 	auto app = Geb::CreateApplication();
 	app->Run();
 	delete app;
