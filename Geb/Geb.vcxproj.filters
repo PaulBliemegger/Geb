@@ -34,6 +34,7 @@
     <ClInclude Include="src\Geb\Log.h">
       <Filter>Geb</Filter>
     </ClInclude>
+    <ClInclude Include="src\gbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Geb\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Geb\Log.cpp">
       <Filter>Geb</Filter>
     </ClCompile>
+    <ClCompile Include="src\gbpch.cpp" />
   </ItemGroup>
 </Project>

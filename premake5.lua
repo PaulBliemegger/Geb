@@ -14,6 +14,9 @@ project "Geb"
 	language "C++"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	pchheader "gbpch.h"
+	pchsource "Geb/src/gbpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
