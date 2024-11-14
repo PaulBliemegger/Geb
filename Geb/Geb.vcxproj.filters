@@ -4,6 +4,9 @@
     <Filter Include="Geb">
       <UniqueIdentifier>{53EE870B-BFF7-877C-4873-9E7CB47B937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Geb\Events">
+      <UniqueIdentifier>{D7DE5D86-C396-9FD3-2C9E-782F18753AC4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Geb.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Geb\EntryPoint.h">
       <Filter>Geb</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Geb\Events\ApplicationEvent.h">
+      <Filter>Geb\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Geb\Events\Event.h">
+      <Filter>Geb\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Geb\Events\KeyEvent.h">
+      <Filter>Geb\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Geb\Events\MouseEvent.h">
+      <Filter>Geb\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Geb\Log.h">
       <Filter>Geb</Filter>

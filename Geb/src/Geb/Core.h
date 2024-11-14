@@ -9,3 +9,5 @@
 #else
 	#error Geb only supports Windows!
 #endif // GB_BUILD_DLL
+
+#define BIT(x) (1 << x)

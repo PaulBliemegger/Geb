@@ -2,6 +2,7 @@
 
 #include "Core.h"
 
+
 namespace Geb {
 
 	class GEB_API Application

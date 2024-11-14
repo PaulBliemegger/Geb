@@ -21,12 +21,13 @@ project "Geb"
 	}
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 	filter "system:windows"
 		cppdialect "C++20"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 		defines
 		{
 			"GB_PLATFORM_WINDOWS",
@@ -72,7 +73,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++20"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 		defines
 		{
 			"GB_PLATFORM_WINDOWS"
