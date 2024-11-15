@@ -10,4 +10,12 @@
 	#error Geb only supports Windows!
 #endif // GB_BUILD_DLL
 
+#ifdef GB_ENABLE_ASSERTS
+#define GB_ASSERT(x, ...) { if(!(x)) { GB_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#define GB_CORE_ASSERT(x, ...) { if(!(x)) { GB_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+#define GB_ASSERT(x, ...)
+#define GB_CORE_ASSERT(x, ...)
+#endif
+
 #define BIT(x) (1 << x)

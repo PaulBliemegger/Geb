@@ -8,6 +8,13 @@ workspace "Geb"
 		"Dist"
 	}
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Geb/vendor/GLFW/include"
+include "Geb/vendor/GLFW"
+
+
 project "Geb"
 	location "Geb"
 	kind "SharedLib"
@@ -25,8 +32,17 @@ project "Geb"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
 	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
+	}
+
+
 	filter "system:windows"
 		cppdialect "C++20"
 		staticruntime "On"

@@ -35,6 +35,8 @@
       <Filter>Geb</Filter>
     </ClInclude>
     <ClInclude Include="src\gbpch.h" />
+    <ClInclude Include="src\Geb\Window.h" />
+    <ClInclude Include="src\Geb\Platform\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Geb\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Geb</Filter>
     </ClCompile>
     <ClCompile Include="src\gbpch.cpp" />
+    <ClCompile Include="src\Geb\Platform\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
