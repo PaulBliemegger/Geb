@@ -1,5 +1,6 @@
 #pragma once
 
+#include "gbpch.h"
 #include "Geb/Core.h"
 
 namespace Geb {
